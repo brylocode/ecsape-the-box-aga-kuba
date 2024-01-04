@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --background-color: black;
+  --font-color: white;
+  --cube-size: 160px;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 1;
+  gap: 0.25rem;
+}
+
+header .icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.title {
+  font-size: 3.75rem;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.sub-title {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.small-text {
+  display: block;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 0.75rem;
+  line-height: 1;
+  text-align: center;
+  color: gray;
+  margin-top: 0.5rem;
+}
+
+.container {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-perspective-origin: 100% 100%;
+          perspective-origin: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-block: 5rem;
+}
+
+.cube {
+  position: relative;
+  width: var(--cube-size);
+  height: var(--cube-size);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: rotate 6s linear infinite;
+          animation: rotate 6s linear infinite;
+}
+
+.cube > div {
+  position: absolute;
+  width: var(--cube-size);
+  height: var(--cube-size);
+  opacity: 0.9;
+  background: -webkit-gradient(linear, left top, right top, from(#09adc8), to(#001f4e));
+  background: linear-gradient(to right, #09adc8, #001f4e);
+}
+
+.s1 {
+  -webkit-transform: translateZ(calc(var(--cube-size) / 2));
+          transform: translateZ(calc(var(--cube-size) / 2));
+}
+
+.s2 {
+  -webkit-transform: rotateY(90deg) translateZ(calc(var(--cube-size) / 2));
+          transform: rotateY(90deg) translateZ(calc(var(--cube-size) / 2));
+}
+
+.s3 {
+  -webkit-transform: rotateY(180deg) translateZ(calc(var(--cube-size) / 2));
+          transform: rotateY(180deg) translateZ(calc(var(--cube-size) / 2));
+}
+
+.s4 {
+  -webkit-transform: rotateX(90deg) translateZ(calc(var(--cube-size) / 2));
+          transform: rotateX(90deg) translateZ(calc(var(--cube-size) / 2));
+}
+
+.s5 {
+  -webkit-transform: rotateY(-90deg) translateZ(calc(var(--cube-size) / 2));
+          transform: rotateY(-90deg) translateZ(calc(var(--cube-size) / 2));
+}
+
+.s6 {
+  -webkit-transform: rotateX(-90deg) translateZ(calc(var(--cube-size) / 2)) rotate(180deg);
+          transform: rotateX(-90deg) translateZ(calc(var(--cube-size) / 2)) rotate(180deg);
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+            transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+            transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+.btn {
+  background-image: -webkit-gradient(linear, left top, right top, from(#1a2980), color-stop(51%, #26d0ce), to(#1a2980));
+  background-image: linear-gradient(to right, #1a2980 0%, #26d0ce 51%, #1a2980 100%);
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 100rem;
+  display: block;
+  border: none;
+  font-family: inherit;
+  margin: 0 auto;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 16px 10px #1a2980;
+          box-shadow: 0 4px 16px 10px #1a2980;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
