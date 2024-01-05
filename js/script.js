@@ -19,7 +19,7 @@ const startTimer = (czas) => {
 
     if (czas === 0) {
       clearInterval(interval);
-      window.location.href = 'lose.html';
+      window.location.href = 'http://example.com/pages/lose.html';
     }
   }, 1000);
 };
