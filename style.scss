@@ -20,7 +20,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding-top: 1.5rem ;
   font-size: 1.5rem;
   font-weight: 200;
   line-height: 1;
@@ -30,6 +30,10 @@ header {
     height: 1.25rem;
     width: 1.25rem;
   }
+}
+
+main {
+  padding: 1rem;
 }
 
 .title {
@@ -133,7 +137,7 @@ header {
   display: block;
   border: none;
   font-family: inherit;
-  margin: 0 auto;
+  margin: 1rem auto;
   text-decoration: none;
   box-shadow: 0 4px 16px 10px #1a2980;
   max-width: fit-content;
@@ -156,4 +160,8 @@ padding-block: 2rem;
   .clock{
     line-height: 1;
   }
+}
+
+.instruction-title {
+  margin-bottom: 1rem;
 }
