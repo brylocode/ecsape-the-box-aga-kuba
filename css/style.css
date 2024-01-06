@@ -206,10 +206,12 @@ main {
 
 .instruction-title {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .instruction-text {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .answer-box {
