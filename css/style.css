@@ -171,6 +171,7 @@ main {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  font-weight: 500;
 }
 
 .btn:hover {
@@ -199,6 +200,10 @@ main {
 
 .instruction-title {
   margin-bottom: 1rem;
+}
+
+.instruction-text {
+  margin-bottom: 2rem;
 }
 
 .answer-box {

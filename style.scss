@@ -143,6 +143,7 @@ main {
   text-decoration: none;
   box-shadow: 0 4px 16px 10px #1a2980;
   max-width: fit-content;
+  font-weight: 500;
 
   &:hover {
     background-position: right center;
@@ -168,6 +169,9 @@ padding-block: 2rem;
   margin-bottom: 1rem;
 }
 
+.instruction-text {
+  margin-bottom: 2rem;
+}
 
 .answer-box {
   display: flex;
