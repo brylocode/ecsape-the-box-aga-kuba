@@ -1,6 +1,6 @@
 const timerBox = document.querySelector('.timer-box');
 
-const duration = 20;
+const duration = 180;
 
 window.onload = () => {
   startTimer(duration);
