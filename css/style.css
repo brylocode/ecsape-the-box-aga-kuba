@@ -180,6 +180,10 @@ main {
   text-decoration: none;
 }
 
+.main-game {
+  margin-top: 3rem;
+}
+
 .timer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,8 +194,10 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 2.5rem;
-  padding-block: 2rem;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  margin-top: .25rem;
+  line-height: 1;
 }
 
 .timer .clock {
@@ -227,7 +233,7 @@ main {
 }
 
 .answer-box label {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
@@ -240,5 +246,29 @@ main {
   color: var(--font-color);
   padding: 1rem;
   width: 100%;
+  -webkit-transition: border-color .2s;
+  transition: border-color .2s;
+}
+
+.answer-input:focus-within {
+  border-color: #09adc8;
+}
+
+.main-status-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100dvh;
 }
 /*# sourceMappingURL=style.css.map */
